@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@color/Orange">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationBee1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1.2"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/beehome" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationBee2"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="2"
+            android:rotationY="180"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/beehome" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/TextViewBee2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="@string/Bee"
+            android:textSize="100dp"
+            android:textColor="@color/white"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationBee3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:rotationY="180"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/beehome" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="24px"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/container_login">
+
+        <EditText
+            android:id="@+id/EditTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="10dp"
+            android:hint="@string/Username"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"
+            android:maxLines="1"
+            android:maxLength="30"
+            />
+        <EditText
+            android:id="@+id/EditTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="@string/Password"
+            android:textSize="30dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="75dp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/ButtonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/heavyOrange"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TextViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Register"
+            android:textColor="@color/FullOrange"/>
+    </LinearLayout>
+</LinearLayout>

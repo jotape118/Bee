@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/Orange">
+
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginVertical="80dp"
+      android:layout_marginHorizontal="35dp"
+      android:orientation="vertical"
+      android:background="@drawable/container_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:background="@drawable/title_register"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/LogRegister"
+          android:textSize="80dp"
+          android:textColor="@color/white"/>
+
+      <com.airbnb.lottie.LottieAnimationView
+          android:id="@+id/AnimationBee"
+          android:layout_width="wrap_content"
+          android:layout_height="60dp"
+          android:layout_weight="0"
+          android:rotationY="180"
+          app:lottie_autoPlay="false"
+          app:lottie_loop="false"
+          app:lottie_rawRes="@raw/beehome" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:padding="24px">
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="@string/Name"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        />
+    <EditText
+        android:id="@+id/EditTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="@string/Username"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        />
+
+    <EditText
+        android:id="@+id/EditTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="@string/Mail"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:maxLines="1"
+        android:maxLength="50"
+        />
+    <EditText
+        android:id="@+id/EditTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="@string/Number"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        />
+    <EditText
+        android:id="@+id/EditTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="@string/Password"
+        android:textSize="25dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="75dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:inputType="textPassword"
+        />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/ButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/heavyOrange"
+            android:text="@string/RegisterBtn"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TextViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/viewLogin"
+            android:textColor="@color/FullOrange"/>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Animacion</string>
+    <string name="Bee">B E E</string>
+    <string name="Name">Nombre</string>
+    <string name="Username">Usuario</string>
+    <string name="Mail">Correo</string>
+    <string name="Number">Numero</string>
+    <string name="Password">Contraseña</string>
+    <string name="Login">Ingresar</string>
+    <string name="UsernameError">Por favor ingresar un usuario valido</string>
+    <string name="viewLogin">Ya tienes una cuenta? Ingresa</string>
+    <string name="Register">No tienes cuenta? Registrate</string>
+    <string name="LogRegister">Registro</string>
+    <string name="RegisterBtn">Registrarse</string>
+</resources>
